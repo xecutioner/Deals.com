@@ -1,0 +1,5 @@
+<div class = "action-title">Create a deal</div>
+<%semantic_form_for @deal do |d|%>
+<%=d.inputs :title,:description,:unit,:expiry_date,:discounted_price,:actual_price,:image_url%>
+<%=d.buttons%>
+<%end%>

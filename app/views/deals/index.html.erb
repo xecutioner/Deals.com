@@ -1,0 +1,7 @@
+<div class = "action-title">More Deals</div>
+<% @deals.each do |deal| %>
+  <div class = "display-deals">
+    <%=link_to deal.title,deal_path(deal) %>
+  </div>
+<% end %>
+
