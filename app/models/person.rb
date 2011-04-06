@@ -8,4 +8,13 @@ class Person < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
 
   has_many :deals
+  validates :email, :presence => true
+  validates :password, :presence => true
+  validates :username, :presence => true
+  validates :fullname, :presence => true
+  validates :phonenumber, :presence => true
+  validates :notify, :presence => true
+  validates_uniqueness_of :email
+  validates_uniqueness_of :username
 end
+

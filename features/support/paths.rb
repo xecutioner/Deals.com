@@ -9,7 +9,7 @@ module NavigationHelpers
     case page_name
 
     when /the home\s?page/
-      '/'
+      deals_path
     when /the new deals page/
       new_deals_path
 
@@ -34,3 +34,4 @@ module NavigationHelpers
 end
 
 World(NavigationHelpers)
+

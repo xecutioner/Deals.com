@@ -7,4 +7,8 @@ class Deal < ActiveRecord::Base
   validates :discounted_price,:presence =>true
   validates :actual_price,:presence =>true
   validates :image_url,:presence =>true
+  validates_numericality_of :unit
+  validates_numericality_of :expiry_date
+  validates_numericality_of :discounted_price
 end
+

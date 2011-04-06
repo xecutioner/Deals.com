@@ -10,10 +10,23 @@ padding:40px;
 }
 .person_new p label {
 float:left;
-}
-
-.person_new p label {
-float:left;
-margin:5px
+margin-top:15px
 padding:2px;
 }
+
+.devise-inputs {
+border:2px groove white;
+overflow:hidden;
+padding:5px;
+}
+
+.devise-inputs input {
+    float:right;
+}
+
+#person_new{
+margin-top:120px;
+margin-left:200px;
+width:490px;
+}
+

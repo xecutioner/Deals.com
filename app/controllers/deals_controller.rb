@@ -1,5 +1,5 @@
 class DealsController < ApplicationController
- before_filter :authenticate_person!
+ before_filter :authenticate_person!, :except => [:index,:show]
   def new
     @deal = Deal.new
   end
@@ -32,3 +32,4 @@ class DealsController < ApplicationController
   end
 
 end
+

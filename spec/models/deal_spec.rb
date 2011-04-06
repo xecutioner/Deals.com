@@ -8,4 +8,8 @@ describe Deal do
   it {should validate_presence_of :expiry_date}
   it {should validate_presence_of :discounted_price}
   it {should validate_presence_of :image_url}
+  it {should validate_numericality_of :unit}
+  it {should validate_numericality_of :expiry_date}
+  it {should validate_numericality_of :discounted_price}
 end
+
