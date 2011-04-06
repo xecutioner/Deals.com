@@ -6,7 +6,6 @@ describe Person do
   it {should validate_presence_of :username }
   it {should validate_presence_of :fullname }
   it {should validate_presence_of :phonenumber }
-  it {should validate_presence_of :notify }
   #it {should validate_uniqueness_of :email}
   #it {should validate_uniqueness_of :username}
 end

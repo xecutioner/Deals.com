@@ -13,7 +13,6 @@ class Person < ActiveRecord::Base
   validates :username, :presence => true
   validates :fullname, :presence => true
   validates :phonenumber, :presence => true
-  validates :notify, :presence => true
   validates_uniqueness_of :email
   validates_uniqueness_of :username
 end

@@ -19,10 +19,12 @@ class DealsController < ApplicationController
     @deal = Deal.new(params[:deal])
     if @deal.save
       flash[:notice]="Congratulations! Your deal has been created"
+      redirect_to :root
     else
       flash[:alert]="Error While creating deal,please try later"
+      render 'new'
     end
-    redirect_to :root
+
   end
 
   def update
