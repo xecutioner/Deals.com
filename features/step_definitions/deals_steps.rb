@@ -1,5 +1,5 @@
 Given /^I am currently on the "([^"]*)" page$/ do |page|
-  visit page_path
+  visit deals_path
 end
 
 

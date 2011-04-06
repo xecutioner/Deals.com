@@ -17,10 +17,10 @@ Feature: Manage deals
     Then I should see "Create a deal"
 
     Scenario:create a deal
-    Given I go to "Sign in" page
+    Given I go to the new person session page
     And I fill in "email" with "prasiddha.joshi@sprout.com"
     And I fill in "Password" with "123456"
     And I press "Sign in"
-    And sleep for 5 seconds
+
     Then I should see "You have successfully signed in"
 
