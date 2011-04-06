@@ -18,9 +18,9 @@ class DealsController < ApplicationController
   def create
     @deal = Deal.new(params[:deal])
     if @deal.save
-      flash[:notice]="Congratulations! Your account has been created"
+      flash[:notice]="Congratulations! Your deal has been created"
     else
-      flash[:alert]="Error While creating User,please try later"
+      flash[:alert]="Error While creating deal,please try later"
     end
     redirect_to :root
   end
