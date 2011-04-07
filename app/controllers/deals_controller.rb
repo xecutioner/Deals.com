@@ -12,11 +12,13 @@ class DealsController < ApplicationController
   end
 
   def index
+    
     @deals = Deal.all
   end
 
   def create
     @deal = Deal.new(params[:deal])
+    @deal.person_id =current_person.id
     if @deal.save
       flash[:notice]="Congratulations! Your deal has been created"
       redirect_to :root

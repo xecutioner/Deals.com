@@ -1,15 +1,19 @@
-<%= deal_data %>
-<h3>Grab a Deal <%=link_to("more deals",deals_path,:class =>'h')%></h3>
-        <h2><%= @deal.title %></h2>
-        <img src="../images/citrus-fruit.jpg" alt="" class="dealimage" />
-        <div class="deal-desc">
-            <h4>About this deal</h4>
-            <p><%= @deal.description %></p>
-      </div>
-      <div id="secondary-items">
-        <ul class="btns">
-            <li class="wht"><a href="" title="">review</a></li>
-            <li><a href="" title="">share</a></li>
-        </ul>
-        </div>
+    <%= deal_data(@deal) %>
+    <h3>Grab This Deal!! <%=link_to("more deals",deals_path,:class =>'h')%></h3>
+    <h2><%= @deal.title %></h2>
+    <img src = "../images/citrus-fruit.jpg" alt="" class="dealimage" />
+    <div class = "deal-desc">
+    <h4>About this deal</h4>
+    <p><%= @deal.description %></p>
+    </div>
+    <div class = "deal-info">
+    <p class= "deal-owner">Deal Created By :- <%= @deal.person.username%></p>
+    <p class = "unit-left">Units Left :-<%=@deal.unit%></p>
+    </div>
+    <div id = "secondary-items">
+    <ul class = "btns">
+    <li class = "wht"><a href="" title="">review</a></li>
+    <li><a href = "" title="">share</a></li>
+    </ul>
+    </div>
 

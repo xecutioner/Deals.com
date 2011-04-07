@@ -7,12 +7,17 @@ padding:40px;
 .display-deals{
   margin:20px;
   font-size:20px;
-  border:2px groove white;
-  height:80px;
+  height:100px;
   text-align:left;
+  -moz-box-shadow: 10px 15px 15px #ccc;
+  -webkit-box-shadow: 5px 5px 5px #ccc;
+  box-shadow: 5px 5px 5px #ccc;
 }
 .display-description{
 font-size:15px
+
+}
+.display-title{
 
 }
 .person_new p label {
@@ -36,4 +41,13 @@ margin-top:120px;
 margin-left:200px;
 width:490px;
 }
-
+.deal-thumbnail{
+  border:2px groove white;
+  float:right;
+  padding:5px;
+  margin:5px;
+}
+.deal-content{
+  float:left;
+  width:650px;
+}

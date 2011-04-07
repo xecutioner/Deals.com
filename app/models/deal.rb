@@ -1,9 +1,11 @@
 class Deal < ActiveRecord::Base
   belongs_to :person
+  has_many :transactions
   validates :title, :presence =>true
   validates :description,:presence =>true
   validates :unit,:presence =>true
-  validates :expiry_date,:presence =>true
+  validates_datetime :expiry_date,:between => [DateTime.now, :date_tomorrow]
+
   validates :discounted_price,:presence =>true
   validates :actual_price,:presence =>true
   validates :image_url,:presence =>true
@@ -14,7 +16,10 @@ class Deal < ActiveRecord::Base
   private
   def date_today
     self.expiry_date ||= DateTime.now
+  end
 
+  def date_tomorrow
+  DateTime.now + 1.day
   end
 end
 

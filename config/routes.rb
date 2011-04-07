@@ -1,8 +1,13 @@
 Deals::Application.routes.draw do
 
 
+
+
   devise_for :people
-  resources :deals
+  resources :deals do
+    resources :transactions
+  end
+
 
 
   # The priority is based upon order of creation:

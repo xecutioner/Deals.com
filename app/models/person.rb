@@ -8,6 +8,7 @@ class Person < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me,:fullname,:username,:phonenumber,:notify
 
   has_many :deals
+  has_many :transactions
   validates :email, :presence => true
   validates :password, :presence => true
   validates :username, :presence => true
