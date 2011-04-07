@@ -4,9 +4,9 @@ class Deal < ActiveRecord::Base
   validates :title, :presence =>true
   validates :description,:presence =>true
   validates :unit,:presence =>true
-  validates_datetime :expiry_date,:between => [DateTime.now, :date_tomorrow]
-
   validates :discounted_price,:presence =>true
+  validates :expiry_date, :presence=> true
+  validates_datetime :expiry_date, :on_or_after => DateTime.now
   validates :actual_price,:presence =>true
   validates :image_url,:presence =>true
   validates_numericality_of :unit
