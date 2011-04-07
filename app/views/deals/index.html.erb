@@ -1,7 +1,8 @@
 <div class = "action-title">More Deals</div>
 <% @deals.each do |deal| %>
   <div class = "display-deals">
-    <%=link_to deal.title,deal_path(deal) %>
+    <p class = "display-title"><%=link_to deal.title,deal_path(deal) %>
+    <p class = "display-description" >   <%= deal.description  %><span class= "deal-thumbnail"><img src = "images/mock-ups.png" height="40px" width="50px"></span></p>
   </div>
 <% end %>
 

@@ -126,7 +126,7 @@ padding-top:16px;
 }
 .dealprice{
 color:#c4132d;
-font-size:3.4em;
+font-size:20px;
 float:left;display:inline;
 padding-right:15px;
 }
@@ -290,3 +290,4 @@ form li.btn input{
 position:relative;
 left:4px;top:1px;
 }
+
