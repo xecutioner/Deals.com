@@ -23,14 +23,11 @@ Feature: Manage deals
     And I follow "Create a Deal"
     And I fill in "Title" with "ABC"
     And I fill in "Description" with "Cdfdf"
-    And I select "Year" as "2012"
+    And I select "Day" as "8"
     And I fill in "Unit" with "2"
     And I fill in "Actual price" with "4"
     And I fill in "Discounted price" with "2"
     And I fill in "Image url" with "http:\\www.google.com"
     And I press "Create Deal"
     Then I should see "Congratulations! Your deal has been created"
-
-
-
 
