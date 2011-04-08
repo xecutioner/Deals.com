@@ -7,7 +7,6 @@ class Deal < ActiveRecord::Base
   validates :discounted_price,:presence =>true
   validates :expiry_date, :presence=> true
   validates_datetime :expiry_date, :on_or_after => DateTime.now
-  validates_datetime :expiry_date, :on_or_before => :date_tomorrow
   validates :actual_price,:presence =>true
   validates :image_url,:presence =>true
   validates_numericality_of :unit

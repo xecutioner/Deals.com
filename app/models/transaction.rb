@@ -6,6 +6,7 @@ class Transaction < ActiveRecord::Base
   validates :card_number,:presence =>true
     validates :payment,:presence =>true
   validates_numericality_of :card_number
+  validates :card_number, :length => {:minimum => 13, :maximum => 16}
   validates_numericality_of :unit
 
 

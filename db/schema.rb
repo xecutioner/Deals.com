@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(:version => 20110407053102) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "payment"
-    t.integer  "card_number"
+    t.string   "card_number"
   end
 
 end

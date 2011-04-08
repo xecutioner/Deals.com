@@ -1,4 +1,5 @@
     <%= deal_data(@deal) %>
+    <%= javascript_tag "TargetDate = '#{@deal.expiry_date.to_datetime}';"%>
     <h3>Grab This Deal!! <%=link_to("more deals",deals_path,:class =>'h')%></h3>
     <h2><%= @deal.title %></h2>
     <img src = "../images/citrus-fruit.jpg" alt="" class="dealimage" />
@@ -12,7 +13,6 @@
     </div>
     <div id = "secondary-items">
     <ul class = "btns">
-    <li class = "wht"><a href="" title="">review</a></li>
     <li><a href = "" title="">share</a></li>
     </ul>
     </div>

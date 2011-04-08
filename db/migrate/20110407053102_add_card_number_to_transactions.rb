@@ -1,6 +1,6 @@
 class AddCardNumberToTransactions < ActiveRecord::Migration
   def self.up
-    add_column :transactions, :card_number, :integer
+    add_column :transactions, :card_number, :string
   end
 
   def self.down

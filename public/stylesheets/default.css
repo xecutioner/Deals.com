@@ -98,7 +98,302 @@ width:218px;
 .clock{
 height:62px;
 color:#365f35;
-font-size:2.7em;
+font-size:1.6em;
+line-height:1.2em;
+text-align:center;
+background:url(../images/clock-r.gif) no-repeat right bottom;
+}
+.clock *{font-weight:normal;}
+.clock span{
+display:block;
+height:62px;
+background:url(../images/clock-l.gif) no-repeat left bottom;
+}
+div.price{
+width:316px;
+padding-top:24px;
+text-align:center;
+}
+.prices{
+float:right;display:inline;
+}
+.value{
+text-decoration:line-through;
+font-size:2em;
+float:left;display:inline;
+padding-right:15px;
+padding-top:16px;
+}
+.dealprice{
+color:#c4132d;
+font-size:20px;
+float:left;display:inline;
+padding-right:15px;
+}
+.c{font-size:0.3em;}
+.value .c{font-size:0.4em;}
+div.buynow{
+width:262px;
+padding-left:15px;
+padding-top:34px;
+float:right;
+
+}
+.buynow a{
+display:block;
+width:197px;height:58px;
+background:url(../images/btn-buynow.jpg) no-repeat left bottom;
+text-indent:-9999em;
+}
+.buynow a:hover{background-position:left top;}
+
+/*DEAL AREA*//*DEAL AREA*//*DEAL AREA*//*DEAL AREA*//*DEAL AREA*//*DEAL AREA*/
+
+img.dealimage{border:7px solid #c5b4df;}
+.deal-desc{
+text-align:left;
+padding-left:85px;
+position:relative;
+float:left;
+width:646px;
+}
+.deal-desc p{
+float:left;display:inline;
+font-size:0.8em;
+line-height:1.6em;
+padding-top:20px;
+width:606px;
+font-family:Arial,sans-serif;
+color:#4c4c4c;
+}
+ul{float:left;}
+ul li{
+list-style-type:none;
+margin-bottom:3px;
+}
+ul.btns li{
+height:34px;
+background:url(../images/btn-side-r.gif) no-repeat right bottom;
+}
+ul.btns li a{
+display:block;
+font-style:italic;
+text-align:center;
+height:34px;width:110px;
+color:#000;
+font-size:1.2em;
+line-height:1.4em;
+text-shadow: #d6c36c 0.1em 0.1em 0;
+background:url(../images/btn-side-l.gif) no-repeat left bottom;
+}
+ul.btns li.wht{background:url(../images/btn-side-wht-r.gif) no-repeat right bottom;}
+ul.btns li.wht a{
+text-shadow: #e2e2e2 0.1em 0.1em 0;
+background:url(../images/btn-side-wht-l.gif) no-repeat left bottom;
+}
+#secondary-items{
+width:110px;
+padding-top:66px;
+float:left;
+}
+ul.btns{
+width:110px;
+float:left;
+}
+
+/*FOOT*//*FOOT*//*FOOT*//*FOOT*//*FOOT*//*FOOT*//*FOOT*//*FOOT*//*FOOT*//*FOOT*/
+
+#foot-out{
+background:#c6b5e0 url(../images/bg-foot.gif) repeat-x left top;
+width:100%;
+float:left;clear:left;
+margin-top:60px;
+padding-bottom:30px;
+}
+#foot{
+position:relative;
+width:880px;
+margin:0 auto;
+}
+a.credit{
+font-family:Arial, sans-serif;
+position:absolute;
+left:90px;top:-20px;
+font-size:0.7em;
+}
+ul.footlist{
+width:714px;
+padding-left:83px;
+}
+ul.footlist h4{
+padding-top:28px;
+padding-bottom:15px;
+font-size:1.2em;
+width:200px;
+}
+ul.footlist h4 a{color:#410798;}
+ul.footlist li.primary{
+float:left;
+width:200px;
+padding-right:38px;
+font-size:0.9em;
+}
+ul.footlist li.primary p a,.deal-desc p a,ul.footlist li.primary li a{font-family:Arial,sans-serif;}
+ul.footlist li.primary p{
+font-size:0.85em;
+line-height:1.6em;
+font-family:Arial,sans-serif;
+color:#4e4758;
+}
+ul.footlist li.primary li{
+width:200px;
+padding:1px 0 4px 0;
+border-bottom:1px solid #8b7f9d;
+}
+ul.footlist li.primary li a{
+font-size:0.8em;
+line-height:1.4em;
+}
+
+/*SIGN UP*//*SIGN UP*//*SIGN UP*//*SIGN UP*//*SIGN UP*//*SIGN UP*//*SIGN UP*/
+
+#sign-out{
+background:#3c0292 url(../images/bg-sign.gif) repeat-x left top;
+width:100%;height:51px;
+float:left;clear:left;
+}
+#sign-up{
+width:880px;
+padding-top:7px;
+margin:0 auto;
+}
+#sign-up p{
+color:#a184cc;
+font-style:italic;
+font-size:1.1em;
+line-height:1.7em;
+padding:0 12px 0 90px;
+}
+#sign-up *{float:left;}
+form li.field{
+width:177px;height:32px;
+padding:5px;
+background:url(../images/form-field.gif) no-repeat left top;
+}
+form li.field input{
+border:0;
+font-size:0.8em;
+color:#4c4c4c;
+width:171px;height:17px;
+padding-top:3px;
+font-family:Arial,sans-serif;
+}
+form li.btn input{
+position:relative;
+left:4px;top:1px;
+}
+
+
+/*TAG RECLASS*//*TAG RECLASS*//*TAG RECLASS*//*TAG RECLASS*//*TAG RECLASS*/
+
+*{
+margin:0;padding:0;
+font-family:Georgia, serif;
+}
+body{background:url(../images/bg-body.gif) repeat-x left top;}
+h1,h2,h3,h4,h5{
+font-weight:normal;
+font-style:italic;
+}
+h3,h4{
+float:left;
+font-size:1.35em;
+text-transform:uppercase;
+}
+h1{
+background:url(../images/bg-h.jpg) no-repeat center top;
+font-size:3.1em;
+line-height:1.7em;
+color:#fff;
+text-align:center;
+height:91px;
+}
+h1 span{display:none;}
+h2{
+font-size:2.3em;
+line-height:1.4em;
+color:#c4132d;
+padding:13px 60px 24px 60px;
+float:left;
+width:760px;
+}
+h3{
+padding-top:20px;
+width:100%;
+}
+h4{padding-top:20px;}
+h5{
+text-transform:uppercase;
+width:218px;
+text-align:center;
+font-size:0.8em;
+padding-bottom:5px;
+}
+a{
+color:#410798;
+text-decoration:none;
+outline:none;
+}
+a:hover{text-decoration:underline;}
+
+/*STRUCTURE*//*STRUCTURE*//*STRUCTURE*//*STRUCTURE*//*STRUCTURE*//*STRUCTURE*/
+
+#wrap{
+width:880px;
+margin:0 auto;
+padding:0;
+position:relative;
+text-align:center;
+}
+a.how{
+font-size:0.3em;
+color:#9f86c3;
+font-style:italic;
+background:url(../images/a-arr.gif) no-repeat right 7px;
+padding:0 12px;
+line-height:1em;
+}
+a.how:hover{background:url(../images/a-arr-on.gif) no-repeat right 7px;}
+a.h{
+font-size:0.65em;
+text-transform:lowercase;
+color:#4c4c4c;
+font-style:italic;
+background:url(../images/a-arr-p.gif) no-repeat right 5px;
+padding:0 12px;
+}
+a.h:hover{background:url(../images/a-arr-p-on.gif) no-repeat right 5px;}
+
+/*DEAL DATA*//*DEAL DATA*//*DEAL DATA*//*DEAL DATA*//*DEAL DATA*//*DEAL DATA*/
+
+.dealdata{
+float:left;
+height:115px;
+width:880px;
+}
+div.time,div.buynow,div.price{
+float:left;display:inline;
+padding-top:15px;
+font-style:italic;
+}
+div.time{
+padding-left:64px;
+width:218px;
+}
+.clock{
+height:62px;
+color:#365f35;
+font-size:1.6em;
 line-height:1.2em;
 text-align:center;
 background:url(../images/clock-r.gif) no-repeat right bottom;

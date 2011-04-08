@@ -4,14 +4,15 @@
   <title>Deals</title>
   <%= stylesheet_link_tag 'default','style','formtastic','formtastic_changes' %>
   <%= javascript_include_tag 'jquery.min','application' %>
+
   <%= csrf_meta_tag %>
 </head>
 <body>
   <div id="wrap">
-    <h1>Deals.com<span><script type="text/javaScript" src="../javascripts/countdown.js"></script></span>
+    <h1><%=link_to("Deals.com",deals_path,:class=>'title-link') %>
       <%= link_to "Create a Deal",new_deal_path, :class => 'how' -%>
+      <label class='username'><%= check_if_logged_in%></label>
     </h1>
-
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
@@ -25,11 +26,11 @@
             <form action="">
             <ul>
                 <li class="field"><input type="text" /></li>
-                <li class="btn"><input type="image" src="images/btn-sign-go.gif"/></li>
+                <li class="btn"><a href=""><img src="../images/btn-sign-go.gif"/></a></li>
             </ul>
             </form>
         </div>
     </div>
 </body>
 </html>
-
+<span><script type="text/javaScript" src="../javascripts/countdown.js"></script></span>

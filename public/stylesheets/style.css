@@ -1,8 +1,8 @@
 .action-title{
-font-size:40px;
-font-style:italic;
-color:#4A4A0C;
-padding:40px;
+  font-size:40px;
+  font-style:italic;
+  color:#4A4A0C;
+  padding:40px;
 }
 .display-deals{
   margin:20px;
@@ -21,15 +21,16 @@ font-size:15px
 
 }
 .person_new p label {
-float:left;
-margin-top:15px
-padding:2px;
+  float:left;
+  margin-top:15px
+  padding:2px;
 }
 
 .devise-inputs {
-border:2px groove white;
-overflow:hidden;
-padding:5px;
+  border:2px groove white;
+  overflow:hidden;
+  padding:5px;
+
 }
 
 .devise-inputs input {
@@ -37,9 +38,9 @@ padding:5px;
 }
 
 #person_new{
-margin-top:120px;
-margin-left:200px;
-width:490px;
+  margin-top:120px;
+  margin-left:200px;
+  width:490px;
 }
 .deal-thumbnail{
   border:2px groove white;
@@ -50,4 +51,34 @@ width:490px;
 .deal-content{
   float:left;
   width:650px;
+}
+.username {
+  font-size:0.3em;
+  color:#9f86c3;
+  font-style:italic;
+  background:url(../images/a-arr.gif) no-repeat right 7px;
+  padding:0 12px;
+  line-height:1em;
+  float:right;
+}
+label.username {
+  font-size:0.3em;
+  color:#9f86c3;
+  font-style:italic;
+  padding:0 12px;
+  line-height:1em;
+  float:right;
+}
+label.username a{
+  font-size:30px;
+  text-decoration:none;
+  color:#9f86c3!important;
+}
+
+.username:hover {
+  background:url(../images/a-arr-on.gif) no-repeat right 7px;
+}
+h1 a.title-link{
+  text-decoration:none;
+  color:#fff!important;
 }

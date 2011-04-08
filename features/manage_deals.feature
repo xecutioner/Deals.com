@@ -23,7 +23,7 @@ Feature: Manage deals
     And I follow "Create a Deal"
     And I fill in "Title" with "ABC"
     And I fill in "Description" with "Cdfdf"
-    And I select "Day" as "8"
+    And I select "Year" as "2012"
     And I fill in "Unit" with "2"
     And I fill in "Actual price" with "4"
     And I fill in "Discounted price" with "2"
@@ -31,3 +31,12 @@ Feature: Manage deals
     And I press "Create Deal"
     Then I should see "Congratulations! Your deal has been created"
 
+  Scenario:apply for a deal
+    Given I visit a deal page
+     # And sleep for 10 seconds
+    And I follow "Buy Now"
+    # And sleep for 10 seconds
+    And I fill in "Unit" with "1"
+    And I fill in "Card number" with "123456222222222"
+    And I press "Create Transaction"
+    Then I should see "Transaction successfull!"

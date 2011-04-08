@@ -15,7 +15,7 @@ CountActive = true;
 CountStepper = -1;
 LeadingZero = true;
 DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds.";
-FinishMessage = "It is finally here!";
+
 </script>
 <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js"></script>
 */
@@ -38,16 +38,16 @@ function CountBack(secs) {
   DisplayStr = DisplayStr.replace(/%%S%%/g, calcage(secs,1,60));
 
   document.getElementById("cntdwn").innerHTML = DisplayStr;
-  
+
   /*This line applies the function to all tags with the .time class*/
-	$(".time span").html(DisplayStr);
-  
+  $(".time span").html(DisplayStr);
+
   if (CountActive)
     setTimeout("CountBack(" + (secs+CountStepper) + ")", SetTimeOutPeriod);
 }
 
 function putspan(backcolor, forecolor) {
- document.write("<span id='cntdwn' style='background-color:" + backcolor + 
+ document.write("<span id='cntdwn' style='background-color:" + backcolor +
                 "; color:" + forecolor + "'></span>");
 }
 

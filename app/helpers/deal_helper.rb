@@ -4,7 +4,7 @@ module DealHelper
     '<div class="dealdata">',
             '<div class="time">',
                 '<h5>Time remaining</h5>',
-                '<div class="clock"><span>00:00:00</span></div>',
+                '<div class="clock"><span id = "cntdwn">00:00:00</span></div>',
             '</div>',
             '<div class="price">',
                 '<div class="prices">',
@@ -18,7 +18,7 @@ module DealHelper
                     '</div>',
             '</div>',
             '<div class="buynow">',
-                link_to("",new_deal_transaction_path(deal)),
+                link_to("Buy Now",new_deal_transaction_path(deal),:id =>"buy-now"),
             '</div>',
 '</div>'].join(' ').html_safe
   end

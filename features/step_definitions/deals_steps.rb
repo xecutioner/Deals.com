@@ -2,8 +2,6 @@ Given /^I am currently on the "([^"]*)" page$/ do |page|
   visit deals_path
 end
 
-
-
 Then /^sleep for (\d+) seconds$/ do |time|
  sleep(time.to_i)
 end
@@ -18,4 +16,9 @@ Given /^I am authenticated$/ do
 end
 Given /^I select "([^"]*)" as "([^"]*)"$/ do |selector, value|
     select(value.to_s, :from => "#{selector}")
+end
+
+Given /^I visit a deal page$/ do
+  deal = Deal.make!(:person_id => 1, :title => "New Product Deal")
+  visit deal_path(deal)
 end
